@@ -6,27 +6,27 @@
   <title>스타일가이드 - SharePay</title>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
-  <link rel="stylesheet" href="/assets/styles.css" />
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
   <header class="header">
     <div class="container header-inner">
       <div class="flex center gap16">
-        <a class="brand" href="/index.html">
+        <a class="brand" href="index.html">
           <span class="brand-mark" aria-hidden="true"></span>
           <span>SharePay</span>
         </a>
         <nav class="topnav" aria-label="Primary">
-          <a href="/index.html" data-topnav="home">홈</a>
-          <a href="/wallet/personal/dashboard.html" data-topnav="personal">개인지갑</a>
-          <a href="/wallet/group/dashboard.html" data-topnav="group">그룹지갑</a>
-          <a href="/community/index.html" data-topnav="community">커뮤니티</a>
-          <a href="/my/profile.html" data-topnav="my">마이페이지</a>
+          <a href="index.html" data-topnav="home">홈</a>
+          <a href="wallet/personal/dashboard.html" data-topnav="personal">개인지갑</a>
+          <a href="wallet/group/dashboard.html" data-topnav="group">그룹지갑</a>
+          <a href="community/index.html" data-topnav="community">커뮤니티</a>
+          <a href="my/profile.html" data-topnav="my">마이페이지</a>
         </nav>
       </div>
       <div class="header-actions">
         <button class="icon-btn" title="검색" aria-label="검색">🔍</button>
-        <a class="icon-btn" href="/notifications.html" title="알림" aria-label="알림" style="display:flex; align-items:center; justify-content:center;">🔔</a>
+        <a class="icon-btn" href="notifications.html" title="알림" aria-label="알림" style="display:flex; align-items:center; justify-content:center;">🔔</a>
         <button class="icon-btn" title="더보기" aria-label="더보기">⋮</button>
         <span class="small">로그인 | 회원가입</span>
       </div>
@@ -35,13 +35,13 @@
 
   <main class="container shell">
 
-  <div class="h1">스타일 가이드 (프로토타입)</div>
-  <div class="small mt8">현재 적용된 컬러/타이포/컴포넌트</div>
+  <div class="h1">스타일 가이드</div>
+  <div class="small mt8">시안 컬러(픽셀 샘플) + 컴포넌트 크기 확인</div>
 
-  <div class="mt16 grid" style="grid-template-columns: 1fr 1fr; gap:16px;">
-    <div class="card pad soft">
+  <div class="grid mt16" style="grid-template-columns: 1fr 1fr; gap: var(--gap);">
+    <div class="card soft pad-lg">
       <div class="h3">Color</div>
-      <div class="mt12 grid col3" style="gap:10px;">
+      <div class="grid mt12" style="grid-template-columns: 1fr 1fr 1fr; gap:10px;">
         <div class="card pad" style="background: var(--primary); color:#fff;">Primary</div>
         <div class="card pad" style="background: var(--primary-dark); color:#fff;">Primary Dark</div>
         <div class="card pad" style="background: var(--primary-light);">Primary Light</div>
@@ -50,26 +50,26 @@
         <div class="card pad" style="background: var(--warning);">Warning</div>
         <div class="card pad" style="background: var(--danger); color:#fff;">Error</div>
         <div class="card pad" style="background: var(--surface-2);">Background</div>
-        <div class="card pad" style="background: var(--text); color:#fff;">Text</div>
+        <div class="card pad" style="background: #111; color:#fff;">Text</div>
       </div>
     </div>
 
-    <div class="card pad soft">
+    <div class="card soft pad-lg">
       <div class="h3">Typography</div>
       <div class="mt12">
-        <div class="h1">H1 - 24px Bold</div>
-        <div class="h2 mt8">H2 - 18px Bold</div>
-        <div class="h3 mt8">H3 - 16px Bold</div>
+        <div class="h1">H1 - 24px</div>
+        <div class="h2 mt8">H2 - 18px</div>
+        <div class="h3 mt8">H3 - 16px</div>
         <div class="p mt8">Body - 14px</div>
         <div class="small mt8">Small - 12px</div>
       </div>
     </div>
   </div>
 
-  <div class="mt16 grid" style="grid-template-columns: 1fr 1fr; gap:16px;">
-    <div class="card pad soft">
+  <div class="grid mt16" style="grid-template-columns: 1fr 1fr; gap: var(--gap);">
+    <div class="card soft pad-lg">
       <div class="h3">Buttons</div>
-      <div class="mt12 flex gap8" style="flex-wrap:wrap;">
+      <div class="flex gap8 mt12" style="flex-wrap:wrap;">
         <button class="btn">Default</button>
         <button class="btn btn-primary">Primary</button>
         <button class="btn btn-success">Success</button>
@@ -80,7 +80,7 @@
       </div>
     </div>
 
-    <div class="card pad soft">
+    <div class="card soft pad-lg">
       <div class="h3">Inputs</div>
       <div class="mt12">
         <input class="input" placeholder="normal" />
@@ -103,20 +103,20 @@
       </div>
       <div class="footer-col">
         <div class="title">서비스</div>
-        <a href="/wallet/personal/dashboard.html">개인지갑</a>
-        <a href="/wallet/group/dashboard.html">그룹지갑</a>
-        <a href="/community/index.html">커뮤니티</a>
-        <a href="/my/profile.html">마이페이지</a>
+        <a href="wallet/personal/dashboard.html">개인지갑</a>
+        <a href="wallet/group/dashboard.html">그룹지갑</a>
+        <a href="community/index.html">커뮤니티</a>
+        <a href="my/profile.html">마이페이지</a>
       </div>
       <div class="flex center gap12">
         <span class="brand-mark" aria-hidden="true"></span>
-        <div style="font-weight:800;">SHAREPAY</div>
+        <div style="font-weight:900;">SHAREPAY</div>
       </div>
     </div>
   </footer>
 
   <button class="fab" title="빠른 액션" aria-label="빠른 액션"></button>
 
-  <script src="/assets/app.js"></script>
+  <script src="assets/app.js"></script>
 </body>
 </html>
