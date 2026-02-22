@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>그룹지갑 - SharePay</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="flex center gap16">
+        <a class="brand" href="/index.html">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>SharePay</span>
+        </a>
+        <nav class="topnav" aria-label="Primary">
+          <a href="/index.html" data-topnav="home">홈</a>
+          <a href="/wallet/personal/dashboard.html" data-topnav="personal">개인지갑</a>
+          <a href="/wallet/group/dashboard.html" data-topnav="group">그룹지갑</a>
+          <a href="/community/index.html" data-topnav="community">커뮤니티</a>
+          <a href="/my/profile.html" data-topnav="my">마이페이지</a>
+        </nav>
+      </div>
+      <div class="header-actions">
+        <button class="icon-btn" title="검색" aria-label="검색">🔍</button>
+        <a class="icon-btn" href="/notifications.html" title="알림" aria-label="알림" style="display:flex; align-items:center; justify-content:center;">🔔</a>
+        <button class="icon-btn" title="더보기" aria-label="더보기">⋮</button>
+        <span class="small">로그인 | 회원가입</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container shell">
+
+  <div class="grid" style="grid-template-columns: 180px 1fr; gap:16px;">
+    <aside class="card pad soft">
+      <div class="h3">그룹지갑</div>
+      <div class="mt12 small">대시보드 / 정산 / 멤버</div>
+      <div class="mt12 list">
+        <div class="list-item"><span>태희 님의 그룹</span><span class="small">›</span></div>
+        <div class="list-item"><span>병국 님의 그룹</span><span class="small">›</span></div>
+      </div>
+    </aside>
+    <section class="card pad soft">
+      <div class="h1">그룹지갑 대시보드</div>
+      <div class="small mt8">공동 지출/정산/목표 공유(프로토타입)</div>
+
+      <div class="mt16 grid col2" style="gap:16px;">
+        <div class="card pad" style="background: var(--surface-2);">
+          <div class="small">이번달 공동 지출</div>
+          <div style="font-size:22px; font-weight:900; margin-top:6px;">₩ 0</div>
+        </div>
+        <div class="card pad" style="background: var(--surface-2);">
+          <div class="small">정산 예정</div>
+          <div style="font-size:22px; font-weight:900; margin-top:6px;">₩ 0</div>
+        </div>
+      </div>
+
+      <div class="mt16 card pad" style="background:#fff;">
+        <div class="h3">정산 내역</div>
+        <table class="table mt12">
+          <thead><tr><th>기간</th><th>멤버</th><th>금액</th><th>상태</th></tr></thead>
+          <tbody>
+            <tr><td>02/01~02/15</td><td>3명</td><td>₩ 0</td><td><span class="badge">대기</span></td></tr>
+            <tr><td>01/01~01/31</td><td>3명</td><td>₩ 0</td><td><span class="badge primary">완료</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <div class="title">Link</div>
+        <a href="#">고객센터</a>
+        <a href="#">문의하기</a>
+        <a href="#">GitHub</a>
+        <a href="#">Figma</a>
+      </div>
+      <div class="footer-col">
+        <div class="title">서비스</div>
+        <a href="/wallet/personal/dashboard.html">개인지갑</a>
+        <a href="/wallet/group/dashboard.html">그룹지갑</a>
+        <a href="/community/index.html">커뮤니티</a>
+        <a href="/my/profile.html">마이페이지</a>
+      </div>
+      <div class="flex center gap12">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <div style="font-weight:800;">SHAREPAY</div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="fab" title="빠른 액션" aria-label="빠른 액션"></button>
+
+  <script src="/assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>자산관리 - SharePay</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body data-side-active="assets">
+  <header class="header">
+    <div class="container header-inner">
+      <div class="flex center gap16">
+        <a class="brand" href="/index.html">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>SharePay</span>
+        </a>
+        <nav class="topnav" aria-label="Primary">
+          <a href="/index.html" data-topnav="home">홈</a>
+          <a href="/wallet/personal/dashboard.html" data-topnav="personal">개인지갑</a>
+          <a href="/wallet/group/dashboard.html" data-topnav="group">그룹지갑</a>
+          <a href="/community/index.html" data-topnav="community">커뮤니티</a>
+          <a href="/my/profile.html" data-topnav="my">마이페이지</a>
+        </nav>
+      </div>
+      <div class="header-actions">
+        <button class="icon-btn" title="검색" aria-label="검색">🔍</button>
+        <a class="icon-btn" href="/notifications.html" title="알림" aria-label="알림" style="display:flex; align-items:center; justify-content:center;">🔔</a>
+        <button class="icon-btn" title="더보기" aria-label="더보기">⋮</button>
+        <span class="small">로그인 | 회원가입</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container shell">
+
+  <div class="wallet">
+    <aside class="card sidebar soft">
+      <div class="h3">메뉴</div>
+      <nav class="menu mt12" aria-label="개인지갑 메뉴">
+        <a href="/wallet/personal/dashboard.html" data-side="dashboard">대시보드</a>
+        <a href="/wallet/personal/optimization.html" data-side="optimization">최적화</a>
+        <a href="/wallet/personal/payments.html" data-side="payments">결제관리</a>
+        <a href="/wallet/personal/assets.html" data-side="assets">자산관리</a>
+        <a href="/wallet/personal/auto-expenses.html" data-side="auto-expenses">자동지출</a>
+        <a href="/wallet/personal/goals.html" data-side="goals">목표/플랜</a>
+        <a href="/wallet/personal/settings.html" data-side="settings">설정</a>
+      </nav>
+    </aside>
+
+    <section class="content">
+      <div class="flex between" style="align-items:flex-end;">
+        <div>
+          <div class="h1">자산관리</div>
+          <div class="small mt8">자산 구성/유휴자금/상품 추천</div>
+        </div>
+        <div class="flex gap8">
+          <button class="btn btn-ghost">필터</button>
+          <button class="btn btn-ghost">내보내기</button>
+        </div>
+      </div>
+
+      <div class="mt16">
+        
+<div class="grid" style="grid-template-columns: 1fr 1fr; gap:16px;">
+  <div class="card pad soft">
+    <div class="h3">자산 구성</div>
+    <div class="small mt8">예금/적금/현금/투자/대출</div>
+    <div class="mt12" style="height:180px; border:1px dashed rgba(107,114,128,.35); border-radius:12px; display:flex; align-items:center; justify-content:center;">
+      <span class="small">[Donut Chart Placeholder]</span>
+    </div>
+  </div>
+  <div class="card pad soft">
+    <div class="h3">유휴자금 추천</div>
+    <div class="mt12 list">
+      <div class="list-item"><span>파킹통장 후보</span><span class="badge primary">연 3.2%</span></div>
+      <div class="list-item"><span>6개월 적금</span><span class="badge">연 4.0%</span></div>
+      <div class="list-item"><span>12개월 예금</span><span class="badge">연 3.7%</span></div>
+    </div>
+    <button class="btn btn-primary mt16" style="width:100%;">상품 비교 보기</button>
+  </div>
+</div>
+
+<div class="mt16 card pad soft">
+  <div class="h3">계좌/상품 목록</div>
+  <table class="table mt12">
+    <thead><tr><th>기관</th><th>유형</th><th>잔액</th><th>메모</th></tr></thead>
+    <tbody>
+      <tr><td>OO은행</td><td>입출금</td><td>₩ 1,250,000</td><td class="muted">비상금</td></tr>
+      <tr><td>XX은행</td><td>적금</td><td>₩ 3,600,000</td><td class="muted">목표</td></tr>
+      <tr><td>카드사</td><td>대출</td><td>₩ -2,000,000</td><td class="muted">상환 계획 필요</td></tr>
+    </tbody>
+  </table>
+</div>
+
+      </div>
+    </section>
+  </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <div class="title">Link</div>
+        <a href="#">고객센터</a>
+        <a href="#">문의하기</a>
+        <a href="#">GitHub</a>
+        <a href="#">Figma</a>
+      </div>
+      <div class="footer-col">
+        <div class="title">서비스</div>
+        <a href="/wallet/personal/dashboard.html">개인지갑</a>
+        <a href="/wallet/group/dashboard.html">그룹지갑</a>
+        <a href="/community/index.html">커뮤니티</a>
+        <a href="/my/profile.html">마이페이지</a>
+      </div>
+      <div class="flex center gap12">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <div style="font-weight:800;">SHAREPAY</div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="fab" title="빠른 액션" aria-label="빠른 액션"></button>
+
+  <script src="/assets/app.js"></script>
+</body>
+</html>

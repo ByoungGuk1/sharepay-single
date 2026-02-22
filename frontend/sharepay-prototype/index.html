@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>홈 - SharePay</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="flex center gap16">
+        <a class="brand" href="/index.html">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>SharePay</span>
+        </a>
+        <nav class="topnav" aria-label="Primary">
+          <a href="/index.html" data-topnav="home">홈</a>
+          <a href="/wallet/personal/dashboard.html" data-topnav="personal">개인지갑</a>
+          <a href="/wallet/group/dashboard.html" data-topnav="group">그룹지갑</a>
+          <a href="/community/index.html" data-topnav="community">커뮤니티</a>
+          <a href="/my/profile.html" data-topnav="my">마이페이지</a>
+        </nav>
+      </div>
+      <div class="header-actions">
+        <button class="icon-btn" title="검색" aria-label="검색">🔍</button>
+        <a class="icon-btn" href="/notifications.html" title="알림" aria-label="알림" style="display:flex; align-items:center; justify-content:center;">🔔</a>
+        <button class="icon-btn" title="더보기" aria-label="더보기">⋮</button>
+        <span class="small">로그인 | 회원가입</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container shell">
+
+  <div class="grid" style="grid-template-columns: 560px 1fr; gap:16px;">
+    <section class="card pad soft">
+      <div class="hero">
+        <div class="hero-media">
+          
+<svg viewBox="0 0 640 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hero illustration">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="rgba(84,81,255,.25)"/>
+      <stop offset="1" stop-color="rgba(0,194,168,.22)"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="640" height="220" rx="16" fill="url(#g)"/>
+  <circle cx="120" cy="110" r="62" fill="rgba(255,255,255,.65)"/>
+  <circle cx="260" cy="120" r="48" fill="rgba(255,255,255,.55)"/>
+  <circle cx="520" cy="90" r="72" fill="rgba(255,255,255,.45)"/>
+  <rect x="330" y="78" width="130" height="86" rx="14" fill="rgba(255,255,255,.70)"/>
+  <rect x="350" y="98" width="90" height="10" rx="5" fill="rgba(84,81,255,.55)"/>
+  <rect x="350" y="118" width="70" height="10" rx="5" fill="rgba(107,114,128,.35)"/>
+  <rect x="350" y="138" width="80" height="10" rx="5" fill="rgba(0,194,168,.35)"/>
+  <text x="22" y="40" font-size="16" font-weight="700" fill="rgba(31,41,55,.8)">커플끼리 같이 자산관리</text>
+  <text x="22" y="64" font-size="16" font-weight="700" fill="rgba(31,41,55,.8)">함께 쓰고, 같이 모아요!</text>
+  <text x="22" y="188" font-size="12" fill="rgba(107,114,128,.9)">* 프로토타입용 더미 일러스트</text>
+</svg>
+
+        </div>
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <div class="badge primary">SharePay</div>
+          <div class="h3">지금 바로 시작하기</div>
+          <button class="btn btn-primary btn-pill" style="align-self:flex-start;">지금 바로 시작하기 →</button>
+        </div>
+      </div>
+
+      <div class="mt16 card pad" style="background: var(--surface-2);">
+        <div class="flex between center">
+          <div>
+            <div class="h3">캘린더</div>
+            <div class="small">결제일/고정비/예산 흐름</div>
+          </div>
+          <div class="flex gap8">
+            <button class="btn btn-pill">월</button>
+            <button class="btn btn-pill btn-primary">주</button>
+          </div>
+        </div>
+        <div class="mt12" style="height: 190px; border-radius: 12px; border:1px dashed rgba(107,114,128,.35); display:flex; align-items:center; justify-content:center;">
+          <span class="small">[Calendar Component Placeholder]</span>
+        </div>
+      </div>
+    </section>
+
+    <aside class="card pad soft">
+      <div class="tabs" role="tablist" aria-label="로그인 탭">
+        <button class="tab active" role="tab">스페셜페이</button>
+        <button class="tab" role="tab">아이디</button>
+        <button class="tab" role="tab">금융인증서</button>
+        <button class="tab" role="tab">공동인증서</button>
+      </div>
+
+      <div class="mt12">
+        <label class="small">아이디(6~12자리 입력)</label>
+        <input class="input mt8" placeholder="아이디" />
+      </div>
+      <div class="mt12">
+        <label class="small">비밀번호(6~20자리 입력)</label>
+        <input class="input mt8" type="password" placeholder="비밀번호" />
+      </div>
+
+      <button class="btn btn-primary mt16" style="width:100%; height:40px;">로그인</button>
+
+      <div class="mt12 small" style="display:flex; justify-content:space-between;">
+        <a href="#">아이디/비밀번호찾기</a>
+        <a href="#">회원가입</a>
+      </div>
+
+      <div class="mt16 card pad" style="background:#fff;">
+        <div class="flex between center">
+          <div class="h3">알림/바로가기</div>
+          <button class="icon-btn" aria-label="설정">⚙</button>
+        </div>
+        <div class="mt12 grid" style="grid-template-columns: repeat(4,1fr); gap:8px;">
+          <button class="btn btn-ghost btn-pill">영수증</button>
+          <button class="btn btn-ghost btn-pill">이용내역</button>
+          <button class="btn btn-ghost btn-pill">지출분석</button>
+          <button class="btn btn-ghost btn-pill">내자산</button>
+        </div>
+      </div>
+
+      <div class="mt16 card pad">
+        <div class="flex between center">
+          <div class="h3">그룹</div>
+          <div class="small">기본 · 친구 · 가족</div>
+        </div>
+        <button class="btn btn-primary mt12" style="width:100%; border-radius: 12px; height:40px;">개인 지출 내역</button>
+        <div class="mt12 list">
+          <div class="list-item"><span>태희 님의 그룹</span><span class="small">›</span></div>
+          <div class="list-item"><span>병국 님의 그룹</span><span class="small">›</span></div>
+          <div class="list-item"><span>가족 님의 그룹</span><span class="small">›</span></div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <div class="mt16 grid col2" style="gap:16px;">
+    <div class="card pad soft" style="background: rgba(0,194,168,.10);">
+      <div class="small">분석 ></div>
+      <div class="h3 mt8">이번달 자산 흐름 분석 완료</div>
+      <div class="small mt8">지출 패턴 기반 최적 카드 전략 확인하기</div>
+    </div>
+    <div class="card pad soft" style="background: rgba(84,81,255,.10);">
+      <div class="small">마이 ></div>
+      <div class="h3 mt8">내 돈 어디에 두면 좋을까?</div>
+      <div class="small mt8">유휴 자금 분석 완료 · 추천 예적금 확인</div>
+    </div>
+  </div>
+
+  <div class="mt16 grid" style="grid-template-columns: 2fr 1fr; gap:16px;">
+    <div class="grid col3" style="gap:12px;">
+      <div class="card pad soft" style="min-height:120px; background: rgba(252,165,165,.18);">
+        <div class="h3">놓치고 있는 카드 혜택 발견</div>
+        <div class="small mt8">예상 기회손실 -8,200원</div>
+      </div>
+      <div class="card pad soft" style="min-height:120px; background: rgba(253,230,138,.22);">
+        <div class="h3">지금 이 카드 쓰는데 이득</div>
+        <div class="small mt8">이번달 예상 혜택 +4,500원</div>
+      </div>
+      <div class="card pad soft" style="min-height:120px; background: rgba(187,247,208,.22);">
+        <div class="h3">목표 자산 달성률</div>
+        <div class="small mt8">목표 달성률 65%</div>
+      </div>
+
+      <div class="card pad soft" style="grid-column: 1 / span 3;">
+        <div class="flex between center">
+          <div class="h3">진행중인 이벤트 더보기</div>
+          <span class="small">›</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid" style="gap:12px;">
+      <div class="card pad soft">
+        <div class="badge">정기결제</div>
+        <div class="h3 mt8">자동지출 관리</div>
+        <div class="small mt8">구독 3개 탐지됨 · 절약 가능 금액 확인</div>
+      </div>
+      <div class="card pad soft">
+        <div class="badge">결제일</div>
+        <div class="h3 mt8">결제일 전략</div>
+        <div class="small mt8">잔고 부족 위험 · 추천 일정 보기</div>
+      </div>
+      <div class="card pad soft" style="min-height:120px;">
+        <div class="h3">재무 건강 점수</div>
+        <div class="small mt8">현재 72점 · 개선 방법 보기</div>
+        <div class="mt12" style="height:10px; background: rgba(107,114,128,.18); border-radius:999px; overflow:hidden;">
+          <div style="height:10px; width:72%; background: var(--primary);"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt16 grid col3" style="gap:16px;">
+    <div class="card pad soft">
+      <div class="h3">공지사항</div>
+      <div class="small mt8">2025년 국가간편결제(NCSI) …</div>
+    </div>
+    <div class="card pad soft">
+      <div class="h3">고객센터</div>
+      <div class="mt12 grid" style="grid-template-columns: repeat(3,1fr); gap:8px;">
+        <button class="btn btn-ghost btn-pill">자주묻는질문</button>
+        <button class="btn btn-ghost btn-pill">이메일상담</button>
+        <button class="btn btn-ghost btn-pill">ARS</button>
+      </div>
+    </div>
+    <div class="card pad soft">
+      <div class="h3">데이터 보안 & 마이데이터 관리</div>
+      <div class="small mt8">소비자 보호 정보를 확인하세요</div>
+      <div class="mt12 flex gap8">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot" style="background: var(--primary);"></span>
+      </div>
+    </div>
+  </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <div class="title">Link</div>
+        <a href="#">고객센터</a>
+        <a href="#">문의하기</a>
+        <a href="#">GitHub</a>
+        <a href="#">Figma</a>
+      </div>
+      <div class="footer-col">
+        <div class="title">서비스</div>
+        <a href="/wallet/personal/dashboard.html">개인지갑</a>
+        <a href="/wallet/group/dashboard.html">그룹지갑</a>
+        <a href="/community/index.html">커뮤니티</a>
+        <a href="/my/profile.html">마이페이지</a>
+      </div>
+      <div class="flex center gap12">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <div style="font-weight:800;">SHAREPAY</div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="fab" title="빠른 액션" aria-label="빠른 액션"></button>
+
+  <script src="/assets/app.js"></script>
+</body>
+</html>
