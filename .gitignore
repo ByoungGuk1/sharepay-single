@@ -1,0 +1,12 @@
+# https://hudi.blog/git-submodule/
+
+# 노드
+frontend/node_modules/
+
+#spring
+backend/idea64.lnk
+
+# 공통 빌드 산출물
+**/target/
+**/build/
+**/.idea/
