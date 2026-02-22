@@ -304,3 +304,52 @@ button, input, select, textarea{ font-family: inherit; }
   box-shadow: var(--shadow);
   cursor:pointer;
 }
+
+/* ===== Main page pixel-fit (메인페이지 기준) ===== */
+:root{
+  --gap: 20px;
+  --col-left: 600px;   /* 600 + 300 + 20 = 920 */
+  --col-right: 300px;
+  --radius: 12px;
+  --shadow: 0 1px 2px rgba(16,24,40,.06), 0 6px 18px rgba(16,24,40,.06);
+}
+
+.main-rows{
+  display:grid;
+  grid-template-columns: var(--col-left) var(--col-right);
+  gap: var(--gap);
+}
+
+.banner-img{
+  height: 210px;
+  border-radius: 12px;
+  overflow:hidden;
+  border: 1px solid rgba(230,230,230,.95);
+  background: #F3F6FF;
+}
+
+.calendar-box{ height: 290px; }
+
+.group-box{
+  height: 290px;
+  background: #fff;
+  border: 1px solid rgba(230,230,230,.95);
+  border-radius: 12px;
+}
+
+.mini3{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+
+.right-stack{
+  display:grid;
+  gap: 12px;
+}
+
+.bottom-3{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--gap);
+}
